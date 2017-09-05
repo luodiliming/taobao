@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="font_tneo16ic1bztcsor/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="font_ugd9iopzmx8vvx6r/iconfont.css"/>
+		<script src="libs/flexible_css.js"></script>
+		<script src="libs/flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="taobajs.css"/>
+	</head>
+	<body>
+		<script>
+window.onload = function(){
+window.addEventListener('touchstart', touchstart, false);
+window.addEventListener('touchmove', touchMove, false);
+}
+
+var _start = 0;
+var _end = 0;
+function touchstart(event) {
+var touch = event.targetTouches[0];
+_start = touch.pageY;
+}
+function touchMove(event){
+var touch = event.targetTouches[0];
+_end = ( touch.pageY - _start);
+//下滑才执行操作
+if(_end > 200){     //200即手机下滑屏幕的距离，超过200则执行刷新动作
+location.reload();
+}
+}
+</script>
+		<!--顶部广告-->
+		<div id="dingbu">
+			<img src="tupian/logo.png"/>
+			<a href="" class="kuang">
+				<i class="iconfont icon-sousuo-sousuo"></i>
+				<p>寻找宝贝店铺</p>
+			</a>
+		</div>
+		<!--顶部广告结束-->
+		 <!--轮播图开始-->
+	   <div id="lunbo">
+			<img src="tupian/flash.jpg" alt="" />
+		</div>
+		 <!--轮播图结束-->
+		<!--十张图开始-->
+		<ul class="yihang">
+			<li>
+				<img src="tupian/1.png"/>
+				<p>天猫</p>
+			</li>
+			<li>
+				<img src="tupian/2.png"/>
+				<p>聚划算</p>
+			</li>
+			<li>
+				<img src="tupian/3.png"/>
+				<p>天猫国际</p>
+			</li>
+			<li>
+				<img src="tupian/4.png"/>
+				<p>外卖</p>
+			</li>
+			<li>
+				<img src="tupian/5.png"/>
+				<p>天猫超市</p>
+			</li>
+		</ul>
+		<ul class="yihang">
+			<li>
+				<img src="tupian/6.png"/>
+				<p>天猫</p>
+			</li>
+			<li>
+				<img src="tupian/7.png"/>
+				<p>聚划算</p>
+			</li>
+			<li>
+				<img src="tupian/8.png"/>
+				<p>天猫国际</p>
+			</li>
+			<li>
+				<img src="tupian/9.png"/>
+				<p>外卖</p>
+			</li>
+			<li>
+				<img src="tupian/10.png"/>
+				<p>天猫超市</p>
+			</li>
+		</ul>
+		<!--十张图结束-->
+		
+		<!--淘宝头条-->
+		<div id="toutiao">
+			<div class="left">
+				<img src="tupian/toutiao.png"/>
+			</div>
+			<span class="xin">
+				<p>最新</p>
+			</span>
+			<div class="right">
+				<p>章子怡现身天猫！惊艳</p>
+			</div>
+		</div>
+		<!--淘宝头条结束-->
+		
+		<!--淘抢购-->
+		<div id="tqg">
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<p>
+					<span>00</span>
+					<span>:</span>
+					<span>00</span>
+					<span>:</span>
+					<span>00</span>
+				</p>
+		
+		</div>
+		<!--淘抢购结束-->
+		
+		<!--超实惠开始-->
+		<div id="chao">
+				<p><i class="iconfont icon-remen3"></i></p>
+				<p class="ha">超实惠</p>
+		</div>
+		<!--超实惠结束-->
+		<!--超实惠图片开始-->
+		<div id="chaotupian">
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+		</div>
+		
+		<!--超实惠图片结束-->
+		
+		<!--天猫必购开始-->
+		<div id="chao">
+				<p><i class="iconfont icon-icon-hot"></i></p>
+				<p class="ha">天猫必购</p>
+		</div>
+		<!--天猫比购结束-->
+			
+		<!--天猫必购图开始-->	
+		<div id="bigou">
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+		</div>	
+		<!--天猫必购图结束-->	
+		
+		<!--特色文字好货开始-->
+		<div id="chao">
+				<p><i class="iconfont icon-remen"></i></p>
+				<p class="ha">特色好货</p>
+		</div>
+		<!--特色文字好货结束-->
+		<!--特色好货图开始-->
+		<div id="tese">
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+		</div>
+		<!--特色好货图结束-->
+		
+		<!--更多服务文字开始-->
+		<div id="gengduo">
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""><p>。。。</p></a>
+			<a href="">更多服务</a>
+			<a href="">></a>
+		</div>
+		<!--更多服务文字结束-->
+		
+		<!--阿里健康图开始-->
+		<div id="ali">
+			
+		</div>
+		<!--阿里健康图结束-->
+		
+		
+		<!--热门市场文字开始--> 
+		<div id="remen">
+				<p><i class="iconfont icon-icon-hot"></i></p>
+				<p class="ha">热门市场</p>
+				<a href="">更多</a>
+				<a href="">></a>
+		</div>
+		<!--热门市场文字结束-->
+		
+		<!--热门市场图片开始-->
+		<div id="retu">
+			<a href="">
+				<p>iFashis</p>
+				<p>春季种草好物</p>
+				<img src="tupian/nvxie.jpg" alt="" />
+			</a>
+			<a href="">
+				<p>潮玩城</p>
+				<p>发现发烧装备</p>
+				<img src="tupian/jiabao.jpg" alt="" />
+			</a>
+			<a href="">
+				<p>亲宝贝</p>
+				<p>花少钱养好娃</p>
+				<img src="tupian/wanju.jpg" alt="" />
+			</a>
+			<a href="">
+				<p>潮电街</p>
+				<p>狂拽吊炸天</p>
+				<img src="tupian/vr.jpg" alt="" />
+			</a>
+			<a href="">
+				<p>私密衣柜</p>
+				<p>蕾丝情怀公主梦</p>
+				<img src="tupian/neiku1.png" alt="" />
+				<img src="tupian/neiku2.png" alt="" />
+			</a>
+			<!--第6开始-->
+			<a href="">
+				<p>适配控</p>
+				<p>剁手党必备欧美腕表TOP帅破天</p>
+				<img src="tupian/fenbiao.jpg" alt="" />
+				<img src="tupian/heibiao.jpg" alt="" />
+			</a>
+			<!--第6结束-->
+			<!--第七开始-->
+			<a href="">
+				<p>型男社</p>
+				<p>街头潮包潮男典范</p>
+				<img src="tupian/bao1.jpg" alt="" />
+				<img src="tupian/bao2.jpg" alt="" />
+			</a>
+			<!--第七结束-->
+			<!--第八开始-->
+			<a href="">
+				<p>运动会</p>
+				<p>入秋了没秋裤用树皮</p>
+				<img src="tupian/tanxian1.jpg" alt="" />
+				<img src="tupian/tanxian2.jpg" alt="" />
+			</a>
+			<!--第八结束-->
+			<!--第九开始-->
+			<a href="">
+				<p>美鞋汇</p>
+				<p>穿了此鞋免整容</p>
+				<img src="tupian/ncxie1.png" alt="" />
+				<img src="tupian/nvxie2.jpg" alt="" />
+			</a>
+			<!--第九结束-->
+			<!--第十开始-->
+			<a href="">
+				<p>美裙控</p>
+				<p>为30岁女性精选美裙</p>
+				<img src="tupian/meinv.jpg" alt="" />
+				<img src="tupian/meinv2.png" alt="" />
+			</a>
+			<!--第十结束-->
+			
+			
+			
+			
+			
+			
+		</div>
+		<!--热门市场图片结束-->
+		
+		<!--撩汉子开始-->
+		<div id="liao">
+		</div>
+		<!--撩汉子结束-->
+		
+		<!--每日好店开始-->
+		<div id="meiri">
+			<p class="hao">每日好店</p>
+			<a href="">更多</a>
+			<span><p>></p></span>
+		</div>
+		<!--每日好店结束-->
+		
+		<!--每日好店图开始-->
+		
+		<div id="haotu">
+			<!--左边开始-->
+			<div class="zuo">
+				<img src="tupian/putao.jpg"/>
+				<img src="tupian/haochi.jpg"/>
+				<img src="tupian/shucai.jpg"/>
+				<p>今日推荐</p>
+			</div>
+			<!--左边结束-->
+			<!--右边开始-->
+			<div class="zuo">
+				<img src="tupian/dianxin.jpg"/>
+				<img src="tupian/quqi.jpg"/>
+				<img src="tupian/hei.jpg"/>
+				<p>吃吃吃</p>
+			</div>
+			<!--右边结束-->
+		</div>
+		<!--每日好店图结束-->
+		
+		<!--猜你喜欢文字开始-->
+		<div id="caini">
+			<p><i class="iconfont icon-icon-hot"></i></p>
+			<p>猜你喜欢</p>
+			<p class="shi">实时推荐最新的宝贝</p>
+		</div>
+		<!--猜你喜欢文字结束-->
+		
+		<!--猜你喜欢图片开始-->
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/dianwen.jpg"/>
+				<p>[为你推荐]灭蚊灯无辐射家用蘑菇光led灭蚊器孕妇电铺蚊神器驱蚊灯</p>
+				<p>￥37.3</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/bingqiling.jpg"/>
+				<p>[为你推荐]脆皮蛋筒冰淇淋华夫筒脆筒送纸套(中口径）25度40个装 全国包邮</p>
+				<p>￥37.3</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/tuzi.jpg"/>
+				<p>[为你推荐]诗经国学复古风纸质书签中国风古典流苏穗子精美小礼品纪念礼物</p>
+				<p>￥65</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/bingkuai.jpg"/>
+				<p>[为你推荐]智慧夫人日式硅胶冰格带盖子 创意冰块模具制冰盒辅食盒冷冻盒子</p>
+				<p>￥28.3</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/yanzhao.jpg"/>
+				<p>[为你推荐]现货日本KIRIBAI桐灰天然红豆蒸汽眼罩 微波加热 冷热敷 去黑眼圈</p>
+				<p>￥27.8</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/mutouo.jpg"/>
+				<p>[为你推荐]黄杨木雕手把件摆件随身佛龛三开盒木雕佛像观音西方三圣工艺品</p>
+				<p>￥742</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/huo.jpg"/>
+				<p>[为你推荐]锅架（请与水壶或奶锅、小锅一起拍下）辅助架</p>
+				<p>￥89</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/huangshui.jpg"/>
+				<p>[为你推荐]通用保温杯杯套玻璃杯保护套可调节背带隔热防摔杯子套旅行布袋</p>
+				<p>￥66.2</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/bing.jpg"/>
+				<p>[为你推荐]香烤鱼片海产品干海鲜烤鱼片250克安康鱼片香鱼片丹东特产鱼片</p>
+				<p>￥2.5</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/dao.jpg"/>
+				<p>[为你推荐]英国 三合一削皮刀 多功能削皮器水果蔬去皮器刨刀 厨房用品</p>
+				<p>￥65</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/beizi.jpg"/>
+				<p>[为你推荐]出口日本日式酒壶 陶瓷 日式清酒壶烧酒壶酒杯酒具套装 装饰包邮</p>
+				<p>￥55.5</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/zhuan.jpg"/>
+				<p>[为你推荐]西餐厨房定时器倒计时器提醒器闹钟机械式带磁铁可吸大声音量酒店</p>
+				<p>￥25.9</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/gua.jpg"/>
+				<p>[为你推荐]deHub吸盘式化妆镜镜子单面梳妆镜 壁挂浴室镜衣柜门后小镜子</p>
+				<p>￥3.5</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/baibei.jpg"/>
+				<p>[为你推荐]免钉倒置悬挂304不锈钢红酒杯架带把杯子收纳架吊杯架咖啡马克杯</p>
+				<p>￥29.4</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/maojin.jpg"/>
+				<p>[为你推荐]抹布架 金属厨房置物架 小毛巾挂架 晾干沥水架 洗碗布挂架收纳架</p>
+				<p>￥12</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/chuan.jpg"/>
+				<p>[为你推荐]幼儿园被子三件套六件套纯棉含芯儿童棉花被子全棉宝宝被褥</p>
+				<p>￥189.65</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/fenbao.jpg"/>
+				<p>[为你推荐]韩式牛津布便当包便当袋铝箔手提袋学生保温包饭盒包冰包饭盒袋</p>
+				<p>￥22</p>
+			</a>
+		</div>
+		<div id="caitu">
+			<a href="">
+				<img src="tupian/sg.jpg"/>
+				<p>[为你推荐]ThriftyVac新款家用食品真空压缩袋密封保鲜收纳袋20只装无抽气孔</p>
+				<p>￥19.9</p>
+			</a>
+		</div>
+			<div id="caitu">
+			<a href="">
+				<img src="tupian/tuoba.png"/>
+				<p>[为你推荐]三角小拖把迷你平板拖把厨房家用浴室擦墙神器檫瓷砖玻璃窗户床底</p>
+				<p>￥9.6</p>
+			</a>
+		</div>
+			<div id="caitu">
+			<a href="">
+				<img src="tupian/zijing.jpg"/>
+				<p>[为你推荐]纸巾架卫生间纸巾盒免打孔吸壁式卫生纸架吸盘厕所卷纸架纸筒防水</p>
+				<p>￥45.5</p>
+			</a>
+		</div>
+			<div id="caitu">
+			<a href="">
+				<img src="tupian/yiguai.jpg"/>
+				<p>[为你推荐]布艺双开门冰箱罩防尘罩单开门冰箱帘盖布冰柜套万能盖巾田园清新</p>
+				<p>￥19.9</p>
+			</a>
+		</div>
+			<div id="caitu">
+			<a href="">
+				<img src="tupian/caig.jpg"/>
+				<p>[为你推荐]厨房橱柜收纳架 下水槽置物架 不锈钢管+可伸缩多用途储物架子</p>
+				<p>￥26.6</p>
+			</a>
+		</div>
+			<div id="caitu">
+			<a href="">
+				<img src="tupian/caodao.jpg"/>
+				<p>[为你推荐]【天天特价】家用水果雕刻刀套装厨用雕刻刀刀具套装</p>
+				<p>￥19.8</p>
+			</a>
+		</div>
+			<div id="caitu">
+			<a href="">
+				<img src="tupian/bayinhe.jpg"/>
+				<p>[为你推荐]Zakka木制复古八音盒手摇音乐盒卡农天空之城爱丽丝圣诞生日礼物</p>
+				<p>￥23.8</p>
+			</a>
+		</div>
+			<div id="caitu">
+			<a href="">
+				<img src="tupian/tureqi.jpg"/>
+				<p>[为你推荐]土耳其帕莎进口玻璃小奶盅汁船西餐汁斗咖啡奶罐小奶壶蜂蜜盅</p>
+				<p>￥20.5</p>
+			</a>
+		</div>
+			<div id="caitu">
+			<a href="">
+				<img src="tupian/jiandao.jpg"/>
+				<p>[为你推荐]加长不锈钢垃圾钳拾物器铁烤漆垃圾夹家用火钳环卫保洁工具卫生夹</p>
+				<p>￥20.0</p>
+			</a>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/dangmen.jpg"/>
+				<p>[为你推荐]创意门挡门塞 大门防撞防风门阻 橡胶挡门器 安全门卡 防夹手门档</p>
+				<p>￥18.9</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/yizi.jpg"/>
+				<p>[为你推荐]Acapulco Egg Chair休闲椅阳台椅花园椅铁藤椅咖啡厅椅书房休息椅</p>
+				<p>￥176.0</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/gz.jpg"/>
+				<p>[为你推荐]简约现代组合书柜书架宜家储物柜收纳柜子防尘书橱置物架特价带门</p>
+				<p>￥342.0</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/sanzi.jpg"/>
+				<p>[为你推荐]手工中式扇子 夏季乘凉扇子 草编手摇扇宝宝纳凉驱蚊蒲扇</p>
+				<p>￥15.2</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/haiyi.jpg"/>
+				<p>[为你推荐]IKEA上海专业宜家家居代购安迪洛婴儿宝宝吃饭餐椅高脚椅子</p>
+				<p>￥78.0</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/jingzi.jpg"/>
+				<p>[为你推荐]嘉宝吸盘镜子 浴室镜化妆镜 壁挂卫生间浴室创意免打孔美容小镜子</p>
+				<p>￥26.8</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/tanzi.jpg"/>
+				<p>[为你推荐]鑫泉纯棉加厚加大枕巾情侣款枕头巾健康舒适枕巾婚庆枕巾一对枕巾</p>
+				<p>￥66.0</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/saozi.jpg"/>
+				<p>[为你推荐]ThriftyVac新款家用食品真空压缩袋密封保鲜收纳袋20只装无抽气孔</p>
+				<p>￥16.2</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/ziji.jpg"/>
+				<p>[为你推荐]【天天特价】无纺布抹布不粘油百洁布清洁布洗碗巾卷状断点式</p>
+				<p>￥20.8</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/chazuo.jpg"/>
+				<p>[为你推荐]异丽仿古禅意茶桌 藤编折叠飘窗桌榻榻米茶几桌子实木小炕桌炕几</p>
+				<p>￥158.0</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/guogai.jpg"/>
+				<p>[为你推荐]不锈钢锅盖通用特厚款炒锅盖蒸锅盖子汤锅高盖</p>
+				<p>￥22.2</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/erduo.jpg"/>
+				<p>[为你推荐]Ying.BOITY出品日韩居家毛绒熊耳朵粘贴式束发带箍发带</p>
+				<p>￥28.58</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/xipan.jpg"/>
+				<p>[为你推荐]双庆不锈钢吸盘双层肥皂盒创意香皂盒时尚肥皂架不生锈肥皂收纳架</p>
+				<p>￥28.58</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/jb.jpg"/>
+				<p>[为你推荐]景德镇陶瓷酒瓶 酒坛 一斤装新款帝王龙凤婚宴装饰酒具送礼收藏</p>
+				<p>￥256</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/miansha.jpg"/>
+				<p>[为你推荐]夏防晒披肩口罩一体骑车披肩防紫外线雪纺女透气薄款遮阳面罩面纱</p>
+				<p>￥16.6</p>
+			</a>
+		</div>
+		</div>	<div id="caitu">
+			<a href="">
+				<img src="tupian/ziji.jpg"/>
+				<p>[为你推荐]【天天特价】无纺布抹布不粘油百洁布清洁布洗碗巾卷状断点式</p>
+				<p>￥20.8</p>
+			</a>
+		</div>
+		<!--猜你喜欢图片结束-->
+		
+		<!--底部开始-->
+		<div id="zx"> 
+			 <div class="hezi">
+			 	<a href="">登录</a>
+				<a href="">注册</a>
+				<a href="">电脑版</a>
+				<a href="">用户反馈</a>
+			 </div>
+			 <div class="yuan"><span>c</span></div>
+			 <p>2016 浙 B2-20080224 服务中心</p>
+		</div>
+		
+		<!--底部结束-->
+	
+	        <!--地狱底部开始-->
+		<div id="di">
+			<a href="">
+			<p><i class="iconfont icon-qiye1"></i>首页</p>
+			<p><i class="iconfont icon-qiche"></i>物流</p>
+			<p><i class="iconfont icon-sousuo-sousuo"></i>搜索</p>
+			<p><i class="iconfont icon-ren"></i>我的</p>
+			<p><i class="iconfont icon-icon"></i>更多</p>
+			</a>
+		</div>
+		<!--地狱底部结束-->
+	</body>
+</html>
